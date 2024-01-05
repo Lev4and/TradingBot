@@ -8,9 +8,9 @@ namespace TradingBot.TradeAdapters
 {
     public class ByBitTradeAdapter : ITradeAdapter
     {
-        private readonly BybitClient _client;
+        private readonly BybitRestClient _client;
 
-        public ByBitTradeAdapter(BybitClient client)
+        public ByBitTradeAdapter(BybitRestClient client)
         {
             _client = client;
         }

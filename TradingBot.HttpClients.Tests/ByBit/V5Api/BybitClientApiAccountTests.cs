@@ -5,9 +5,9 @@ namespace TradingBot.HttpClients.Tests.ByBit.V5Api
 {
     public class AccountTests
     {
-        private readonly BybitClient _client;
+        private readonly BybitRestClient _client;
 
-        public AccountTests(BybitClient client)
+        public AccountTests(BybitRestClient client)
         {
             _client = client;
         }

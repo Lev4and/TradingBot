@@ -7,9 +7,9 @@ namespace TradingBot.TradeAdapters
 {
     public class BinanceTradeAdapter : ITradeAdapter
     {
-        private readonly BinanceClient _client;
+        private readonly BinanceRestClient _client;
 
-        public BinanceTradeAdapter(BinanceClient client)
+        public BinanceTradeAdapter(BinanceRestClient client)
         {
             _client = client;
         }

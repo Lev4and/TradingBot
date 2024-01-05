@@ -9,7 +9,7 @@ namespace TradingBot.DataProviders.Tests
     {
         private readonly ITradeAdapter _adapter;
 
-        public QuotesDataProviderTests(BybitClient httpClient)
+        public QuotesDataProviderTests(BybitRestClient httpClient)
         {
             _adapter = new ByBitTradeAdapter(httpClient);
         }

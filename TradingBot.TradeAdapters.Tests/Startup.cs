@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Okex.Net.Objects.Core;
 using TradingBot.HttpClients;
 using TradingBot.Quik;
 

@@ -7,7 +7,7 @@ namespace TradingBot.TradeAdapters.Tests
     {
         private readonly ITradeAdapter _adapter;
 
-        public BinanceTradeAdapterTests(BinanceClient client)
+        public BinanceTradeAdapterTests(BinanceRestClient client)
         {
             _adapter = new BinanceTradeAdapter(client);
         }

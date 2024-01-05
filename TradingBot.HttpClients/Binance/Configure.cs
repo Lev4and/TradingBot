@@ -7,7 +7,7 @@ namespace TradingBot.HttpClients.Binance
     {
         public static void AddBinanceHttpClients(this IServiceCollection services)
         {
-            services.AddSingleton(factory => new BinanceClient());
+            services.AddSingleton(factory => new BinanceRestClient());
         }
     }
 }

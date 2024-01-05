@@ -4,11 +4,11 @@ using Binance.Net.Interfaces.Clients.SpotApi;
 
 namespace TradingBot.HttpClients.Tests.Binance.SpotApi
 {
-    public class BinanceClientSpotApiExchangeDataTests
+    public class BinanceRestClientSpotApiExchangeDataTests
     {
-        private readonly IBinanceClientSpotApiExchangeData _client;
+        private readonly IBinanceRestClientSpotApiExchangeData _client;
 
-        public BinanceClientSpotApiExchangeDataTests(BinanceClient client)
+        public BinanceRestClientSpotApiExchangeDataTests(BinanceRestClient client)
         {
             _client = client.SpotApi.ExchangeData;
         }

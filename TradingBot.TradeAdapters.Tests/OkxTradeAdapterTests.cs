@@ -1,4 +1,5 @@
-﻿using Okex.Net;
+﻿using OKX.Api.Clients.RestApi;
+using OKX;
 using TradingBot.Core.Domain;
 
 namespace TradingBot.TradeAdapters.Tests
@@ -7,9 +8,9 @@ namespace TradingBot.TradeAdapters.Tests
     {
         private readonly ITradeAdapter _adapter;
 
-        public OkxTradeAdapterTests(OkexClient client)
+        public OkxTradeAdapterTests(OKXRestApiPublicDataClient client, OKXRestApiMarketDataClient rclient)
         {
-            _adapter = new OkxTradeAdapter(client);
+            _adapter = new OkxTradeAdapter(client, rclient);
         }
 
         [Fact]

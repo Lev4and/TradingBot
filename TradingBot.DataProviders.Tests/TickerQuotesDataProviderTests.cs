@@ -10,7 +10,7 @@ namespace TradingBot.DataProviders.Tests
         private readonly ITradeAdapter _adapter;
         private readonly ITickersDataProvider _tickersDataProvider;
 
-        public TickerQuotesDataProviderTests(BybitClient httpClient)
+        public TickerQuotesDataProviderTests(BybitRestClient httpClient)
         {
             _adapter = new ByBitTradeAdapter(httpClient);
             _tickersDataProvider = new TickersDataProvider(_adapter);

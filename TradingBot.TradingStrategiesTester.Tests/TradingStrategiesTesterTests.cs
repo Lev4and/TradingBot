@@ -11,7 +11,7 @@ namespace TradingBot.TradingStrategiesTester.Tests
         private readonly ITradeAdapter _adapter;
         private readonly ITickersDataProvider _tickersDataProvider;
 
-        public TradingStrategiesTesterTests(BybitClient httpClient) 
+        public TradingStrategiesTesterTests(BybitRestClient httpClient) 
         {
             _adapter = new ByBitTradeAdapter(httpClient);
             _tickersDataProvider = new TickersDataProvider(_adapter);

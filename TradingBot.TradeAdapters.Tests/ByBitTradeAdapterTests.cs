@@ -7,7 +7,7 @@ namespace TradingBot.TradeAdapters.Tests
     {
         private readonly ITradeAdapter _adapter;
 
-        public ByBitTradeAdapterTests(BybitClient client)
+        public ByBitTradeAdapterTests(BybitRestClient client)
         {
             _adapter = new ByBitTradeAdapter(client);
         }

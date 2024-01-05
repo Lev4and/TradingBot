@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Okex.Net;
-using Okex.Net.Objects.Core;
+using OKX.Api;
 
 namespace TradingBot.HttpClients.Okx
 {
@@ -8,9 +7,9 @@ namespace TradingBot.HttpClients.Okx
     {
         public static void AddOkxHttpClients(this IServiceCollection services)
         {
-            OkexClientOptions.Default.UnifiedApiOptions.BaseAddress = "https://www.okx.cab";
-
-            services.AddSingleton(factory => new OkexClient());
+            //OKXRestApiClientOptions.Default.UnifiedApiOptions.BaseAddress = "https://www.okx.cab";
+            
+            services.AddSingleton(factory => new OKXRestApiClient(new OKXRestApiClientOptions { BaseAddress = "https://www.okx.cab" }));
         }
     }
 }

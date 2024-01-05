@@ -3,11 +3,11 @@ using Binance.Net.Interfaces.Clients.SpotApi;
 
 namespace TradingBot.HttpClients.Tests.Binance.SpotApi
 {
-    public class BinanceClientSpotApiAccountTests
+    public class BinanceRestClientSpotApiAccountTests
     {
-        private readonly IBinanceClientSpotApiAccount _client;
+        private readonly IBinanceRestClientSpotApiAccount _client;
 
-        public BinanceClientSpotApiAccountTests(BinanceClient client)
+        public BinanceRestClientSpotApiAccountTests(BinanceRestClient client)
         {
             _client = client.SpotApi.Account;
         }
